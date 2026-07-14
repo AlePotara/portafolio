@@ -1,0 +1,63 @@
+/* ============================================
+   Estilos propios - Portafolio Alejandro Maidana
+   ============================================ */
+
+/* Compensa la altura del navbar fijo al navegar con anclas */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+/* ----- Sección Inicio (hero) ----- */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1b2a6b 0%, #4527a0 50%, #6a1b9a 100%);
+  padding-top: 72px;
+}
+
+.avatar-hero {
+  width: 260px;
+  height: 260px;
+  max-width: 70%;
+  object-fit: cover;
+  background-color: #fff;
+}
+
+/* ----- Tarjetas de habilidades y proyectos ----- */
+.tarjeta-skill,
+.tarjeta-proyecto {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-skill:hover,
+.tarjeta-proyecto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Color morado para el ícono de Bootstrap */
+.text-purple {
+  color: #7952b3;
+}
+
+/* ----- Ajustes de modo oscuro ----- */
+[data-bs-theme="dark"] .hero {
+  background: linear-gradient(135deg, #0d1333 0%, #241458 50%, #3c1060 100%);
+}
+
+[data-bs-theme="dark"] .card {
+  background-color: #1c2333;
+}
+
+/* ----- Calculadora ----- */
+.pantalla-calc {
+  font-size: 2rem;
+  text-align: right;
+  font-family: "Courier New", monospace;
+  min-height: 70px;
+}
+
+.btn-calc {
+  font-size: 1.25rem;
+  padding: 0.75rem 0;
+}
